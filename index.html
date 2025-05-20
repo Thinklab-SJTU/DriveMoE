@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>DriveMoE</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">DriveMoE: Mixture-of-Experts for Vision-Language-Action Model in End-to-End Autonomous Driving</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhenjie Yang</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yilin Chai</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xiaosong Jia</a><sup>*</sup>,</span><br>
+                    <span class="author-block">
+                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Qifeng Li</a>,</span>
+                      <span class="author-block">
+                        <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yuqian Shao</a>,</span>
+                        <span class="author-block">
+                          <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xuekai Zhu</a>,</span>
+                          <span class="author-block">
+                            <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Haisheng Su</a>,</span>
+                            <span class="author-block">
+                              <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Junchi Yan</a><sup>†</sup></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Shanghai Jiao Tong University<br></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution&nbsp;&nbsp;&nbsp;&nbsp;<sup>†</sup>Correspondence Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/Thinklab-SJTU/DriveMoE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span> -->
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/DriveMoE.mov"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Visualization of DriveMoE (built upon Drive-&pi;<sub>0</sub>) on the Bench2Drive benchmark. 
+        Vision MoE selects camera views contextually, defaulting to rear view if no critical view is identified. Action MoE activates the top-3 experts based on routing scores.
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            End-to-end autonomous driving (E2E-AD) demands effective processing of multi-view sensory data and robust handling of diverse and complex driving scenarios, particularly rare maneuvers such as aggressive turns. Recent success of Mixture-of-Experts (MoE) architecture in Large Language Models (LLMs) demonstrates that specialization of parameters enables strong scalability. In this work, we propose <b>DriveMoE</b>, a novel MoE-based E2E-AD framework, with a Scene-Specialized Vision MoE and a Skill-Specialized Action MoE. 
+            DriveMoE is built upon our Vision-Language-Action (VLA) baseline (originally from the embodied AI field), called <b>Drive-&pi;<sub>0</sub></b>. 
+            Specifically, we add Vision MoE to Drive-&pi;<sub>0</sub> by training a router to select relevant cameras according to the driving context dynamically. 
+            This design mirrors human driving cognition, where drivers selectively attend to crucial visual cues rather than exhaustively processing all visual information. 
+            In addition, we add Action MoE by training another router to activate specialized expert modules for different driving behaviors. 
+            Through explicit behavioral specialization, DriveMoE is able to handle diverse scenarios without suffering from modes averaging like existing models. 
+            In Bench2Drive closed-loop evaluation experiments, DriveMoE achieves state-of-the-art (SOTA) performance, demonstrating the effectiveness of combining vision and action MoE in autonomous driving tasks. 
+            <i>We will release our code and models of <b>DriveMoE</b> and <b>Drive-&pi;<sub>0</sub></b></i>.
+.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small" style="padding: 0; margin: 0; position: relative; z-index: 0;">
+  <div class="hero-body" style="padding: 0; margin: 0;">
+    <div class="container" style="padding: 0; margin: 0 auto; max-width: 800px; position: relative;">
+
+      <!-- 左箭头 -->
+      <button onclick="document.getElementById('results-carousel').scrollBy({ left: -800, behavior: 'smooth' })"
+              style="position: absolute; top: 50%; left: -30px; transform: translateY(-50%); z-index: 10; font-size: 2rem; background: rgba(255,255,255,0.8); border: none; border-radius: 50%; padding: 0.5rem; cursor: pointer;">
+        &#8249;
+      </button>
+
+      <!-- 右箭头 -->
+      <button onclick="document.getElementById('results-carousel').scrollBy({ left: 800, behavior: 'smooth' })"
+              style="position: absolute; top: 50%; right: -30px; transform: translateY(-50%); z-index: 10; font-size: 2rem; background: rgba(255,255,255,0.8); border: none; border-radius: 50%; padding: 0.5rem; cursor: pointer;">
+        &#8250;
+      </button>
+
+      <!-- Carousel -->
+      <div id="results-carousel" style="
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+      ">
+        <div class="item" style="min-width: 800px; scroll-snap-align: start; text-align: center;">
+          <img src="static/images/compare-1.png" style="width: 800px; height: 500px; object-fit: contain; margin: 0 auto;" />
+          <h2 class="subtitle has-text-centered" style="font-size: 16px" margin-top: 0;>Comparison of Different Vision and Action Modeling Strategies in VLA-based End-to-End Driving.</h2>
+        </div>
+
+        <div class="item" style="min-width: 800px; scroll-snap-align: start; text-align: center;">
+          <img src="static/images/drivemoe-1.png" style="width: 800px; height: 500px; object-fit: contain; margin: 0 auto;" />
+          <h2 class="subtitle has-text-centered" style="font-size: 16px" margin-top: 0;>Framework of DriveMoE.</h2>
+        </div>
+
+        <div class="item" style="min-width: 800px; scroll-snap-align: start; text-align: center;">
+          <img src="static/images/visionmoe-1.png" style="width: 800px; height: 500px; object-fit: contain; margin: 0 auto;" />
+          <h2 class="subtitle has-text-centered" style="font-size: 16px">The Scene-Specialized Vision Mixture-of-Experts.</h2>
+        </div>
+
+        <div class="item" style="min-width: 800px; scroll-snap-align: start; text-align: center;">
+          <img src="static/images/actionmoe-1.png" style="width: 800px; height: 500px; object-fit: contain; margin: 0 auto;" />
+          <h2 class="subtitle has-text-centered" style="font-size: 16px">Skill-Specialized Action Mixture-of-Experts.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End image carousel -->
+
+<!-- Video carousel -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Challenging Corner Case Results</h2>
+
+        <div class="video-row" style="
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          flex-wrap: wrap;
+        ">
+          <div class="item item-video1">
+            <video id="video1" autoplay controls muted loop
+                   style="width: 260px; height: 160px; object-fit: cover; border-radius: 8px;">
+              <source src="static/videos/ParkingExit_1.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered" style="font-size: 16px; margin-top: 8px;">ParkingExit</h2>
+          </div>
+
+          <div class="item item-video2">
+            <video id="video2" autoplay controls muted loop
+                   style="width: 260px; height: 160px; object-fit: cover; border-radius: 8px;">
+              <source src="static/videos/ConstructionObstacleTwoWays_1.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered" style="font-size: 16px; margin-top: 8px;">ConstructionObstacleTwoWays</h2>
+          </div>
+
+          <div class="item item-video3">
+            <video id="video3" autoplay controls muted loop
+                   style="width: 260px; height: 160px; object-fit: cover; border-radius: 8px;">
+              <source src="static/videos/InterurbanActorFlow_1.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered" style="font-size: 16px; margin-top: 8px;">InterurbanActorFlow</h2>
+          </div>
+
+          <div class="item item-video4">
+            <video id="video4" autoplay controls muted loop
+                   style="width: 260px; height: 160px; object-fit: cover; border-radius: 8px;">
+              <source src="static/videos/SignalizedJunctionLeftTurnEnterFlow_1.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered" style="font-size: 16px; margin-top: 8px;">SignalizedJunctionLeftTurnEnterFlow</h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
