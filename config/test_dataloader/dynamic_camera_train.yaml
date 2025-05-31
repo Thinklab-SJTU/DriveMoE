@@ -1,0 +1,10 @@
+current_dir: "YOUR_CURRENT_WORK_DIR"  # You need to set path
+
+data:
+  train:
+    statistics_path: ${current_dir}/statistics.json
+    use_fixed_images: False
+    work_dir: ${current_dir}
+    split: train
+    num_of_action_experts: 13
+    shuffle_buffer_size: 200000
