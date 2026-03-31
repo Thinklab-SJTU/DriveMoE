@@ -46,14 +46,21 @@
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </head>
 <body>
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">DriveMoE: Mixture-of-Experts for Vision-Language-Action Model in End-to-End Autonomous Driving</h1>
+            <div style="
+              text-align:center;
+              font-size:24px;
+              font-weight:700;
+              color:#e74c3c;
+              margin:10px 0 20px 0;
+            ">
+              Accepted by CVPR 2026 🎉
+            </div>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -297,18 +304,63 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{yang2025drivemoe,
-          title={DriveMoE: Mixture-of-Experts for Vision-Language-Action Model in End-to-End Autonomous Driving}, 
-          author={Zhenjie Yang and Yilin Chai and Xiaosong Jia and Qifeng Li and Yuqian Shao and Xuekai Zhu and Haisheng Su and Junchi Yan},
-          year={2025},
-          eprint={2505.16278},
-          archivePrefix={arXiv},
-          primaryClass={cs.CV},}</code></pre>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+
+    <div class="bibtex-box">
+      <button class="copy-btn" onclick="copyBibtex()">Copy</button>
+      <pre><code id="bibtex-code">@article{yang2025drivemoe,
+  title   = {DriveMoE: Mixture-of-experts for vision-language-action model in end-to-end autonomous driving},
+  author  = {Yang, Zhenjie and Chai, Yilin and Jia, Xiaosong and Li, Qifeng and Shao, Yuqian and Zhu, Xuekai and Su, Haisheng and Yan, Junchi},
+  journal = {arXiv preprint arXiv:2505.16278},
+  year    = {2025}
+}</code></pre>
     </div>
+  </div>
 </section>
+
+<style>
+  .bibtex-box {
+    position: relative;
+  }
+
+  .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #3273dc;
+    color: white;
+  }
+
+  .copy-btn:hover {
+    background-color: #2759a5;
+  }
+
+  .bibtex-box pre {
+    padding-top: 48px;
+  }
+</style>
+
+<script>
+  function copyBibtex() {
+    const bibtexText = document.getElementById('bibtex-code').innerText;
+    navigator.clipboard.writeText(bibtexText).then(() => {
+      const btn = document.querySelector('.copy-btn');
+      const oldText = btn.innerText;
+      btn.innerText = 'Copied!';
+      setTimeout(() => {
+        btn.innerText = oldText;
+      }, 1500);
+    });
+  }
+</script>
 <!--End BibTex citation -->
 
 
