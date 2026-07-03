@@ -63,10 +63,12 @@ This project has been developed based on the following pioneering works on GitHu
 ## Citation <a name="citation"></a>
 
 ```bibtex
-@article{yang2025drivemoe,
-      title={DriveMoE: Mixture-of-experts for vision-language-action model in end-to-end autonomous driving},
-      author={Yang, Zhenjie and Chai, Yilin and Jia, Xiaosong and Li, Qifeng and Shao, Yuqian and Zhu, Xuekai and Su, Haisheng and Yan, Junchi},
-      journal={arXiv preprint arXiv:2505.16278},
-      year={2025}
+@InProceedings{Yang_2026_CVPR,
+    author    = {Yang, Zhenjie and Chai, Yilin and Jia, Xiaosong and Li, Qifeng and Shao, Yuqian and Zhu, Xuekai and Su, Haisheng and Yan, Junchi},
+    title     = {DriveMoE: Mixture-of-Experts for Vision-Language-Action Model in End-to-End Autonomous Driving},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {10678-10688}
 }
 ```
